@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>opdracht 7c</title>
+</head>
+
+<body>
+    <h1>opdracht 7c Simon Boerrigter</h1>
+    <p id="deel1"></p>
+    <p id="deel2"></p>
+    <p id="deel3"></p>
+    <p id="deel4"></p>
+    <p id="deel5"></p>
+    <div id="validatie">
+        <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+            <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+    </div>
+    <script>
+        var mijnArray = ["1", "2", "3", "4", "5", "6"];
+        document.getElementById('deel1').innerHTML = mijnArray.join('<br>');
+
+        var periode = ["winter", "lente", "zomer", "herfst"];
+        document.getElementById('deel2').innerHTML = periode.join('<br>');
+
+        var random = ["4", "januari", "febuari", "12", "maart", "11", "april"];
+        document.getElementById('deel3').innerHTML = random.join('<br>');
+
+        mijnArray.push("hello");
+        mijnArray.push("my");
+        mijnArray.push("name");
+        mijnArray.push("is");
+        mijnArray.push("simon");
+        mijnArray.push("and");
+        mijnArray.push("I");
+        mijnArray.push("am");
+        mijnArray.push("16");
+        mijnArray.push("years");
+        mijnArray.push("old");
+
+
+        document.getElementById('deel4').innerHTML = mijnArray.join('<br>');
+
+        mijnArray[0]=2;
+        mijnArray[1]=1;
+        mijnArray[2]=3;
+
+        document.getElementById('deel5').innerHTML = mijnArray.join('<br>');
+    </script>
+</body>
+
+</html>
